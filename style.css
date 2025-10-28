@@ -1,0 +1,132 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff202b;
+}
+
+.idea {
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.idea strong {
+  display: block;
+  font-size: 1.1em;
+}
+
+.tag {
+  display: inline-block;
+  background: #333;
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+.scenes {
+  background: #181818;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.scenes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.scenes li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.controls input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.controls button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #444;
+}
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button, .controls input, .controls select {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="app">
+  <h1>🎬 YouTube Video Planner</h1>
+
+  <form id="ideaForm">
+    <input type="text" id="title" placeholder="Video title..." required />
+    <textarea id="description" placeholder="Describe your idea..." required></textarea>
+    <input type="text" id="tags" placeholder="Tags (comma separated)" />
+    <select id="category">
+  <option value="">Select Category</option>
+  <option value="Pre-Production">Pre-Production</option>
+  <option value="Filming">Filming</option>
+  <option value="Editing">Editing</option>
+</select>
+
+    <button type="submit">Add Idea</button>
+  </form>
+<div class="controls">
+  <input type="text" id="search" placeholder="Search ideas..." />
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Pre-Production">Pre-Production</option>
+    <option value="Filming">Filming</option>
+    <option value="Editing">Editing</option>
+  </select>
+  <button id="exportJSON">Export JSON</button>
+  <button id="importJSON">Import JSON</button>
+</div>
+
+
+  <h2>Ideas</h2>
+  <ul id="ideaList"></ul>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
